@@ -1,0 +1,118 @@
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\MovieReviews.dll.config
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Antlr3.Runtime.pdb
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\EntityFramework.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\EntityFramework.SqlServer.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.Owin.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\Newtonsoft.Json.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\PagedList.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\PagedList.Mvc.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.Helpers.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.Mvc.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.Optimization.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.Razor.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.WebPages.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\bin\System.Web.WebPages.Razor.xml
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.csprojAssemblyReference.cache
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.FirstCreate.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ImplementIdentityAuth.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ChangeMovieStarsToDouble.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddRowVersionPropertyToMovieModel.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddDataAnnotationsOnMovieModel.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddUserReviews.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReview.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews1.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddViewModel.resources
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.GenerateResource.cache
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CoreCompileInputs.cache
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CopyComplete
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\MovieReviewsMVC-master\obj\Release\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\MovieReviews.dll.config
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Antlr3.Runtime.pdb
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\EntityFramework.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\EntityFramework.SqlServer.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.Owin.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\Newtonsoft.Json.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\PagedList.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\PagedList.Mvc.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.Helpers.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.Mvc.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.Optimization.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.Razor.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.WebPages.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\bin\System.Web.WebPages.Razor.xml
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.csprojAssemblyReference.cache
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.FirstCreate.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ImplementIdentityAuth.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ChangeMovieStarsToDouble.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddRowVersionPropertyToMovieModel.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddDataAnnotationsOnMovieModel.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddUserReviews.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReview.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews1.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddViewModel.resources
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.GenerateResource.cache
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CoreCompileInputs.cache
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CopyComplete
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\backup2\MovieReviewsMVC-master\obj\Release\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\MovieReviews.dll.config
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Antlr3.Runtime.pdb
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\EntityFramework.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\EntityFramework.SqlServer.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.Owin.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\Newtonsoft.Json.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\PagedList.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\PagedList.Mvc.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.Helpers.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.Mvc.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.Optimization.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.Razor.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.WebPages.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\System.Web.WebPages.Razor.xml
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.csprojAssemblyReference.cache
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.FirstCreate.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ImplementIdentityAuth.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ChangeMovieStarsToDouble.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddRowVersionPropertyToMovieModel.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddDataAnnotationsOnMovieModel.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddUserReviews.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReview.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.ModifyUserReviews1.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Migrations.AddViewModel.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.GenerateResource.cache
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CoreCompileInputs.cache
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.csproj.CopyComplete
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.dll
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.pdb
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\bin\bg\MovieReviews.resources.dll
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Resources.Resource.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\MovieReviews.Resources.Resource.bg.resources
+C:\Users\alex\Downloads\movie review\OWIN authorization\MovieReviewsMVC-master\obj\Release\bg\MovieReviews.resources.dll

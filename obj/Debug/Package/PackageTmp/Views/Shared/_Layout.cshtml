@@ -1,0 +1,207 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">    <title>Movie Reviews</title>
+    @Styles.Render("~/Content/css")
+
+   
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column">
+
+        <!-- header zone-->
+        <div class="row head">
+
+            <div class="col-md-12 main-background text-center">
+                <!-- img is here <span class="display-4 text-white">MOVIE<br />REVIEWS</span>-->
+                <div id="img-container"> <img id="starlogo" src="~/Content/Images/STAR-LOGO.png" /></div>
+
+            </div>
+
+        </div><!-- end header-->
+        <!-- Main zone : menu and content -->
+        <div class="row flex-grow-1 flex-shrink-1 ">
+
+            <div class="d-md-none col-2 ">
+                <div class="menu mt-5">
+                    <!-- menu wrapper-->
+                    <!-- FOR SMALL DISPLAYS (<medium)-->
+                    <ul class="nav flex-column ">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link text-white" href="/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link text-white" href="/Home/Movies">Movies</a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link text-white" href="/Home/Contact">Contact</a>
+
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a class="nav-link text-white" href="/Home/FAQ">FAQ</a>
+
+                        </li>
+                        @{
+                            // This is Login , register or Logout buttons on small displays
+                            if (@ViewBag.IsRegistered == null)
+                            {
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="/Auth/Login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/Auth/Register">Register</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="/Auth/MyProfile">My profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/Auth/Logout">Logout</a>
+                                </li>
+                            }
+                            if (@ViewBag.IsAdmin == true)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/Admin">Admin options</a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-md-2  left-background">
+                <div class="menu mt-5">
+                    <!-- menu wrapper-->
+
+                    <ul class="nav flex-column">
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+                        {
+                            <li class="nav-item mt-3">
+                                <button class="nav-link btn myButton">Home</button>
+                            </li>
+                        }
+                            <li class="nav-item mt-3">
+                                @using (Html.BeginForm("Movies", "Home", FormMethod.Get))
+                                {
+                                    <button class="nav-link btn myButton mt-1">Movies</button>
+                                    //  <button class="nav-link btn btn-sm btn-block btn-dark mt-1 ">Movies</button>
+                                }
+                            </li>
+                        @using (Html.BeginForm("Contact", "Home", FormMethod.Get))
+                        {
+                            <li class="nav-item mt-3">
+                                <button class="nav-link myButton btn btn-sm  mt-1">Contact</button>
+                            </li>
+                        }
+                        @using (Html.BeginForm("FAQ", "Home", FormMethod.Get))
+                        {
+                            <li class="nav-item mt-3">
+                                <button class="nav-link myButton btn btn-sm  mt-1">FAQ</button>
+                            </li>
+                        }
+                    </ul>
+                    <input class="form-control mt-5 searchString" type="search" placeholder="Search movie..." aria-label="Search">
+                    <div class="text-right">
+                        <button class="btn btn-info mt-3 moviesOption" type="submit" data-url="@Url.Content("~/Home/AjaxMovies")">Search</button>
+                    </div>
+                </div><!-- end menu div wrapper-->
+            </div>
+
+            <div id="content" class="col-md-8 text-white ">
+                @RenderBody() 
+            </div>
+
+            <div class="d-none d-md-block col-md-2 ">
+                <!-- Show this on displays larger or equal to MD (medium)-->
+                <!-- login and register-->
+                @{
+                    if (@ViewBag.IsRegistered == null)
+                    {
+                        <text> <div class="menu">
+                                <!-- menu wrapper-->
+                                <ul class="nav flex-column">
+                                    @using (Html.BeginForm("Login", "Auth", FormMethod.Get))
+                                    {
+                                        <li class="nav-item ">
+                                            <button class="nav-link btn btn-sm  btn-info">Login</button>
+                                        </li>
+                                    }
+                                    @using (Html.BeginForm("Register", "Auth", FormMethod.Get))
+                                    {
+                                        <li class="nav-item">
+
+                                            <button class="nav-link btn btn-sm btn-info mt-1">Register</button>
+
+                                        </li>
+                                    }
+                                </ul>
+                            </div> </text>
+                    }
+                    else
+                    {
+                        <text> <div class="menu">
+                                <!-- menu wrapper-->
+                                   <ul class="nav flex-column">
+                                       @if (ViewBag.IsGuest == true)
+                                       {
+                                          using (Html.BeginForm("Logout", "Auth"))
+                                           {
+                                               <li class="nav-item ">
+                                                   <button class="nav-link btn btn-sm btn-info">Log out</button>
+                                               </li>
+                                           }
+                                       }
+                                       else
+                                       {
+                                           using (Html.BeginForm("MyProfile", "Auth"))
+                                           {
+                                               <li class="nav-item ">
+                                                   <button class="nav-link btn btn-sm btn-info">My profile</button>
+                                               </li>
+                                           }
+                                       }
+                                       <ul>
+</div>   </text>
+                    }
+                    if (@ViewBag.IsAdmin == true)
+                    {
+                        <div class="menu">
+                            <!-- menu wrapper-->
+                            <ul class="nav flex-column">
+                                @using (Html.BeginForm("Index", "Admin"))
+                                {
+                                    <li class="nav-item mt-3">
+                                        <button class="nav-link btn btn-sm btn-info">Admin options</button>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                }
+            </div>
+
+        </div><!-- end content zone-->
+        <!-- footer-->
+        <div class="row align-items-end">
+            <div class="col-md-12">
+                <hr />
+                <footer class="navbar-fixed-bottom">
+                    <p>&copy; Movie Reviews Ltd.</p>
+                </footer>
+            </div>
+        </div>
+        <!-- end footer-->
+
+    </div><!-- end container-fluid-->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/custom/mainScript.js"></script>
+</body>
+</html>

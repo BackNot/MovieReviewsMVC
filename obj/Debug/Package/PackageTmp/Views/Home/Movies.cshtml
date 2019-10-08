@@ -1,0 +1,85 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<MovieReviews.Models.Movie>
+
+    
+      <span class="lead text-white">Show me:</span>
+            @Html.ActionLink("Oldest", "Movies", new { sortOrder = "oldest" })
+       
+            @Html.ActionLink("Newest", "Movies", new { sortOrder = "newest" })
+        
+            @Html.ActionLink("Worst", "Movies", new { sortOrder = "worst" })
+        
+            @Html.ActionLink("Best", "Movies", new { sortOrder = "best" })
+        
+<div class="container text-white">
+    <div class="row">
+
+        
+    @foreach (var item in Model)
+{
+    <div class="col-md-4">
+
+        <table class="table table-borderless text-center">
+
+            <tr>
+                <td>
+                    <img src="@item.PathToImage" width="80" height="120" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     @Html.DisplayFor(modelItem => item.MovieName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     @Html.DisplayFor(modelItem => item.MovieYear)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     @Html.DisplayFor(modelItem => item.Category)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Description:  @Html.DisplayFor(modelItem => item.Description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Stars:  @Html.DisplayFor(modelItem => item.Stars) / 10
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Review: @Html.DisplayFor(modelItem => item.Review)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    See reviews: @using (Html.BeginForm("Index", "Review", new { id = item.MovieId },FormMethod.Get))
+                    {
+
+                        <input type="submit" class="btn btn-sm " value="See " />
+                    }
+                    Add review: @using (Html.BeginForm("Index", "Add", new { @movie = item.MovieName }))
+                    {
+
+                        <input type="submit" class="btn btn-sm " value="Add" />
+                    }
+
+
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+}
+        </div>
+    </div>
+
+@Html.PagedListPager(Model, page => Url.Action("Movies",
+    new { page, sortOrder = ViewBag.CurrentSort}))

@@ -1,0 +1,73 @@
+﻿@model MovieReviews.Models.Movie
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="row text-white">
+    <div class="col-12">
+        <table class="table text-center ">
+
+            <tr>
+                <td class="border-0">
+                    <img src="@Model.PathToImage" width="80" height="120" />
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    @Html.DisplayFor(modelItem => modelItem.MovieName)
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    @Html.DisplayFor(modelItem => modelItem.MovieYear)
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    @Html.DisplayFor(modelItem => modelItem.Category)
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    Description:  @Html.DisplayFor(modelItem => modelItem.Description)
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    Stars:  @Html.DisplayFor(modelItem => modelItem.Stars) / 10
+                </td>
+            </tr>
+            <tr>
+                <td class="border-0">
+                    Review: @Html.DisplayFor(modelItem => modelItem.Review)
+                </td>
+            </tr>
+            </table>
+
+</div>
+    </div>
+<h4 class="display-4 text-white">People's opinions</h4>
+    @{ 
+            
+        if (Model.UserReviews != null)
+        {
+            foreach (var item in Model.UserReviews)
+            {
+            <div class="row mt-5 text-white text-muted">
+                <div class="col-2 border ">
+                    @item.User.UserName
+                </div>
+                <div class="col-10 border">
+                    @item.Review
+                </div>
+            </div>
+                }
+            }
+        }
+    @using (Html.BeginForm("Index","Add",new { movie = Model.MovieName}))
+    {
+        <input type="submit" class="btn btn-sm mt-3" value="Add review" />
+    }

@@ -1,0 +1,30 @@
+﻿@model MovieReviews.Identity.ApplicationUser
+
+<div>
+   <h1 class="display-4">My profile</h1>
+    <hr />
+    <div class="form-group">
+        @Html.DisplayNameFor(model => model.UserName)
+        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", disabled = "disabled" })
+    </div>
+    <div class="form-group">
+        @Html.DisplayNameFor(model => model.FirstName)
+        @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", disabled = "disabled" })
+    </div>
+    <div class="form-group">
+        @Html.DisplayNameFor(model => model.LastName)
+        @Html.TextBoxFor(model => model.LastName, new { @class = "form-control disabled", disabled = "disabled" })
+    </div>
+    <div class="form-group">
+        @Html.DisplayNameFor(model => model.Email)
+        @Html.TextBoxFor(model => model.Email, new { @class = "form-control disabled", disabled = "disabled" })
+    </div>
+</div>
+@using (Html.BeginForm("Change", "Auth", FormMethod.Get))
+{
+    <button type="button" class="btn btn-info">Change password</button>
+}
+@using (Html.BeginForm("Logout", "Auth", FormMethod.Post))
+{
+    <button class="btn btn-info mt-3">Logout</button>
+}

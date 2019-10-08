@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="asd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Имейл адрес</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Въпроси</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Влизане</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Излизане</value>
+  </data>
+  <data name="Movies" xml:space="preserve">
+    <value>Филми</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>Моят профил</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="PasswordDontMatch" xml:space="preserve">
+    <value>Паролите не съвпадат</value>
+  </data>
+  <data name="Policy" xml:space="preserve">
+    <value>Прочетох &lt;span class="text-muted privacy"&gt;декларацията за поверителност&lt;/span&gt; и съм съгласен</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="RePassword" xml:space="preserve">
+    <value>Повтори парола</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Търси</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Потребителско име</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="AddReview" xml:space="preserve">
+    <value>Добави мнение</value>
+  </data>
+  <data name="Best" xml:space="preserve">
+    <value>Най-добри</value>
+  </data>
+  <data name="Newest" xml:space="preserve">
+    <value>Най-нови</value>
+  </data>
+  <data name="Oldest" xml:space="preserve">
+    <value>Най-стари</value>
+  </data>
+  <data name="PeoplesOpinion" xml:space="preserve">
+    <value>Мнението на хората</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Мнения</value>
+  </data>
+  <data name="SearchMovie" xml:space="preserve">
+    <value>Търси филм...</value>
+  </data>
+  <data name="See" xml:space="preserve">
+    <value>Прочети</value>
+  </data>
+  <data name="SeeReviews" xml:space="preserve">
+    <value>Виж мненията</value>
+  </data>
+  <data name="ShowMe" xml:space="preserve">
+    <value>Покажи ми</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Worst" xml:space="preserve">
+    <value>Най-лоши</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Смени парола</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Полето за имейл е задължително</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>Полето за име е задължително</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Полето за фамилия е задължително</value>
+  </data>
+  <data name="LoginAsGuest" xml:space="preserve">
+    <value>Влез като гост</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Полето за парола е задължително</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Запомни ме</value>
+  </data>
+  <data name="UserNameRequired" xml:space="preserve">
+    <value>Полето за потребителско име е задължително</value>
+  </data>
+  <data name="ChangeLang" xml:space="preserve">
+    <value>Защо секцията с филми и отзивите е на английски, след като смених езика на български?</value>
+  </data>
+  <data name="ChangeLangA" xml:space="preserve">
+    <value>Секцията за филми и отзивите е на английски език и тя няма да се промени като останалата част на сайта.</value>
+  </data>
+  <data name="HowCanIRegister" xml:space="preserve">
+    <value>Как мога да се регистрирам?</value>
+  </data>
+  <data name="HowCanIRegisterA" xml:space="preserve">
+    <value>Чрез бутона "Регистрация" в дясно на екрана. (Ако използвате мобилно устройство бутона се намира под менюто)</value>
+  </data>
+  <data name="HowToAddAReview" xml:space="preserve">
+    <value>Как да напиша отзив/мнение?</value>
+  </data>
+  <data name="HowToAddAReviewA" xml:space="preserve">
+    <value>Много е лесно. Просто намерете филма, които търсите и натиснете бутона "Добави мнение/отзив"</value>
+  </data>
+  <data name="HowToAddMovie" xml:space="preserve">
+    <value>Искам да напиша отзив за филм, който го няма тук. Как да го добавя?</value>
+  </data>
+  <data name="HowToAddMovieA" xml:space="preserve">
+    <value>За съжаление, към този момент е невъзможно Вие да добавите филм. Изпратете ни кратък мейл с заглавието на филма и ще бъде добавен. :)</value>
+  </data>
+  <data name="HowToDelete" xml:space="preserve">
+    <value>Как да си изтрия профила?</value>
+  </data>
+  <data name="HowToDeleteA" xml:space="preserve">
+    <value>Съжаляваме да го чуем. Пратете ни кратък мейл с желанието Ви и потребителското име. Ще ви бъдем благодарни ако напишете и причината , поради която го правите.</value>
+  </data>
+  <data name="HowToReachUs" xml:space="preserve">
+    <value>Можете да се свържете с нас по следния начин</value>
+  </data>
+  <data name="HowToReport" xml:space="preserve">
+    <value>Как да съобщя за потребител, който е написал обиден коментар?</value>
+  </data>
+  <data name="HowToReportA" xml:space="preserve">
+    <value>Изпратете ни мейл с потребителското му име</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Език</value>
+  </data>
+  <data name="WhatIsThisAllAbout" xml:space="preserve">
+    <value>Каква е целта на сайта?</value>
+  </data>
+  <data name="WhatIsThisAllAboutA" xml:space="preserve">
+    <value>Сайтът има за цел да представи филми и отзиви на потребителите. Всеки може да напише отзив. Регистрацията не е задължителна</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Нова парола</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Текуща парола</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>Полето за текуща парола е задължително</value>
+  </data>
+  <data name="ReNewPassword" xml:space="preserve">
+    <value>Нова парола</value>
+  </data>
+  <data name="ReNewPasswordRequired" xml:space="preserve">
+    <value>Полето за парола е задължително</value>
+  </data>
+</root>

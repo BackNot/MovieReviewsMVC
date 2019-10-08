@@ -1,0 +1,11 @@
+﻿@model MovieReviews.Models.Movie
+@using (Html.BeginForm("EditMovies"))
+{
+    @Html.ValidationSummary();
+    @Html.AntiForgeryToken();
+    @Html.EditorForModel();
+    @Html.HiddenFor(o => o.RowVersion);
+    
+    
+    <input type="submit" class="btn btn-sm" value="Save" />
+}

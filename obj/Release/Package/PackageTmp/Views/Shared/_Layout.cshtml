@@ -1,0 +1,375 @@
+﻿@using MovieReviews.Resources;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
+    <title>Movie Reviews</title>
+    @Styles.Render("~/Content/css")
+    <link rel="shortcut icon" type="image/png" href="/Content/Images/STAR-LOGO.png" />
+
+
+</head>
+@if (Session["theme"]==null)
+{
+    <body>
+
+        <div class="container-fluid d-flex flex-column dark-theme">
+
+            <!-- header zone-->
+            <div class="row head">
+
+                <div class="col-md-12 main-background text-center">
+                    <!-- img is here <span class="display-4 text-white">MOVIE<br />REVIEWS</span>-->
+                    <div id="img-container"> <img id="starlogo" src="/Content/Images/STAR-LOGO.png" /></div>
+
+                </div>
+
+            </div><!-- end header-->
+            <!-- Main zone : menu and content -->
+            <div class="row flex-grow-1 flex-shrink-1 ">
+
+                <div class="d-md-none col-2 ">
+
+                    <div class="menu mt-5">
+                        <!-- menu wrapper-->
+                        <!-- FOR SMALL DISPLAYS (<medium)-->
+                        <ul class="nav flex-column ">
+                            <li class="nav-item mt-3">
+                                <a class="nav-link text-white" href="/Home/Index">@Resource.Home</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link text-white" href="/Home/Movies">@Resource.Movies</a>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link text-white" href="/Home/Contact">@Resource.Contact</a>
+
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a class="nav-link text-white" href="/Home/FAQ">@Resource.FAQ</a>
+
+                            </li>
+
+                            @{
+                                // This is Login , register or Logout buttons on small displays
+                                if (@ViewBag.IsRegistered == null)
+                                {
+                                    <li class="nav-item mt-3">
+                                        <a class="nav-link text-white" href="/Auth/Login">@Resource.Login</a>
+                                    </li>
+                                    <li class="nav-item mt-3">
+                                        <a class="nav-link text-white" href="/Auth/Register">@Resource.Register</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    if (ViewBag.IsGuest == null)
+                                    {
+                                        <li class="nav-item mt-3">
+                                            <a class="nav-link text-white" href="/Auth/MyProfile">@Resource.MyProfile</a>
+                                        </li>
+                                    }
+                                    <li class="nav-item mt-3">
+                                        <a class="nav-link text-white" href="/Auth/Logout">@Resource.Logout</a>
+                                    </li>
+                                }
+                                if (@ViewBag.IsAdmin == true)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/Admin">Admin options</a>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Resource.Theme
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="/Home/Theme?option=dark" class="btn btn-sm">Dark</a><br />
+                                <a href="/Home/Theme?option=light" class="btn btn-sm">Light</a>
+                            </div>
+                        </div>
+                        <span id="lang" class="text-right text-white">
+                            @Resource.Lang:
+                            <a href="/Home/ChangeCulture?ddlCulture=en"><img src="~/Content/Images/eng-flag.png" height="20" width="20" /></a>
+                            <a href="/Home/ChangeCulture?ddlCulture=bg"><img src="~/Content/Images/bg-flag.png" height="20" width="20" /></a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="d-none d-md-block col-md-2  left-background">
+                    <div class="menu mt-5">
+                        <!-- menu wrapper-->
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Resource.Theme
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="/Home/Theme?option=dark" class="btn btn-sm ">Dark</a><br />
+                                <a href="/Home/Theme?option=light" class="btn btn-sm ">Light</a>
+                            </div>
+                        </div>
+                        <span id="lang" class="text-right text-white">
+                            @Resource.Lang:
+                            <a href="/Home/ChangeCulture?ddlCulture=en"><img src="~/Content/Images/eng-flag.png" height="20" width="20" /></a>
+                            <a href="/Home/ChangeCulture?ddlCulture=bg"><img src="~/Content/Images/bg-flag.png" height="20" width="20" /></a>
+                        </span>
+                        <ul class="nav flex-column">
+                            @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+                            {
+                                <li class="nav-item mt-3">
+                                    <button class="nav-link btn myButton">@Resource.Home</button>
+                                </li>
+                            }
+                            <li class="nav-item mt-3">
+                                @using (Html.BeginForm("Movies", "Home", FormMethod.Get))
+                                {
+                                <button class="nav-link btn myButton mt-1">@Resource.Movies</button>
+                                    //  <button class="nav-link btn btn-sm btn-block btn-dark mt-1 ">Movies</button>
+                                }
+                            </li>
+                            @using (Html.BeginForm("Contact", "Home", FormMethod.Get))
+                            {
+                                <li class="nav-item mt-3">
+                                    <button class="nav-link myButton btn btn-sm  mt-1">@Resource.Contact</button>
+                                </li>
+                            }
+                            @using (Html.BeginForm("FAQ", "Home", FormMethod.Get))
+                            {
+                                <li class="nav-item mt-3">
+                                    <button class="nav-link myButton btn btn-sm  mt-1">@Resource.FAQ</button>
+                                </li>
+                            }
+                        </ul>
+                        <input class="form-control mt-5 searchString" type="search" placeholder="@Resource.SearchMovie" aria-label="Search">
+                        <div class="text-right">
+                            <button class="btn btn-info mt-3 moviesOption" type="submit" data-url="@Url.Content("~/Home/AjaxMovies")">@Resource.Search</button>
+                        </div>
+                    </div><!-- end menu div wrapper-->
+                </div>
+
+                <div id="content" class="col-md-8 text-white ">
+                    @RenderBody()
+                </div>
+
+                <div class="d-none d-md-block col-md-2 ">
+                    <!-- Show this on displays larger or equal to MD (medium)-->
+                    <!-- login and register-->
+                    @{
+                        if (@ViewBag.IsRegistered == null)
+                        {
+                            <text> <div class="menu">
+                                    <!-- menu wrapper-->
+                                    <ul class="nav flex-column">
+                                        @using (Html.BeginForm("Login", "Auth", FormMethod.Get))
+                                        {
+                                            <li class="nav-item ">
+                                                <button class="nav-link btn btn-sm btn-light">@Resource.Login</button>
+                                            </li>
+                                        }
+                                        @using (Html.BeginForm("Register", "Auth", FormMethod.Get))
+                                        {
+                                            <li class="nav-item">
+
+                                                <button class="nav-link btn btn-sm btn-light mt-1">@Resource.Register</button>
+
+                                            </li>
+                                        }
+                                    </ul>
+                                </div> </text>
+                        }
+                        else
+                        {
+                            <text> <div class="menu">
+                                    <!-- menu wrapper-->
+                                    <ul class="nav flex-column">
+                                        @if (ViewBag.IsGuest == true)
+                                        {
+                                            using (Html.BeginForm("Logout", "Auth"))
+                                            {
+                                                <li class="nav-item ">
+                                                    <button class="nav-link btn btn-sm btn-info">@Resource.Logout</button>
+                                                </li>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            using (Html.BeginForm("MyProfile", "Auth"))
+                                            {
+                                                <li class="nav-item ">
+                                                    <button class="nav-link btn btn-sm btn-info">@Resource.MyProfile</button>
+                                                </li>
+                                            }
+                                        }
+                                        <ul>
+                                </div>   </text>
+                        }
+                        if (@ViewBag.IsAdmin == true)
+                        {
+                            <div class="menu">
+                                <!-- menu wrapper-->
+                                <ul class="nav flex-column">
+                                    @using (Html.BeginForm("Index", "Admin"))
+                                    {
+                                        <li class="nav-item mt-3">
+                                            <button class="nav-link btn btn-sm btn-info">Admin options</button>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+
+                    }
+                </div>
+
+            </div><!-- end content zone-->
+            <!-- footer-->
+            <div class="row align-items-end">
+                <div class="col-md-12">
+                    <hr />
+                    <footer class="navbar-fixed-bottom">
+                        <p>&copy; Movie Reviews </p>
+                    </footer>
+                </div>
+            </div>
+            <!-- end footer-->
+
+        </div><!-- end container-fluid-->
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="/Scripts/custom/mainScript.js"></script>
+    </body>
+}
+else
+{
+
+    <body>
+        <div class="container-fluid d-flex flex-column light-theme">
+            <!-- header zone-->
+            <div class="row head">
+                <div class="col-md-12 main-background text-center">
+                    <!-- img is here <span class="display-4 text-white">MOVIE<br />REVIEWS</span>-->
+                    <div id="img-container"> <img id="starlogo" src="/Content/Images/STAR-LOGO.png" /></div>
+
+                </div>
+
+            </div><!-- end header-->
+            <!-- Main zone : menu and content -->
+            <div class="row  ">
+                <!-- navigation -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">2019</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Home/Index">@Resource.Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Home/Movies">@Resource.Movies</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Home/Contact">@Resource.Contact</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Home/FAQ">@Resource.FAQ</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2 searchString" type="search" placeholder="@Resource.SearchMovie" aria-label="Search">
+                                <button class="btn btn-info my-2 my-sm-0 moviesOption" type="submit" data-url="@Url.Content("~/Home/AjaxMovies")">@Resource.Search</button>
+                            </form>
+                            <ul class="navbar-nav ">
+                                @{
+                                    if (@ViewBag.IsRegistered == null)
+                                    {
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/Login">@Resource.Login</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/Register">@Resource.Register</a>
+                                        </li>
+                                    }
+                                    else if (ViewBag.IsGuest != null)
+                                    {
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/Logout">Log out</a>
+                                        </li>
+                                    }
+                                    else if (ViewBag.IsAdmin != null)
+                                    {
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Admin/Index">Admin options</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/MyProfile">@Resource.MyProfile</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/MyProfile">@Resource.MyProfile</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/Auth/Logout">@Resource.Logout</a>
+                                        </li>
+                                    }
+
+                                }
+
+                            </ul>
+                        </div>
+                    </nav> <!-- end navbar-->
+
+                </div><!-- end navigation -->
+            </div> <!-- end navigation row-->
+
+            <div class="row flex-grow-1">
+                <div class="col-md-2">
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Resource.Theme
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="/Home/Theme?option=dark" class="btn btn-sm">Dark</a><br />
+                            <a href="/Home/Theme?option=light" class="btn btn-sm">Light</a>
+                        </div>
+                    </div>
+                    <span id="lang" class="text-right text-white">
+                        @Resource.Lang:
+                        <a href="/Home/ChangeCulture?ddlCulture=en"><img src="~/Content/Images/eng-flag.png" height="20" width="20" /></a>
+                        <a href="/Home/ChangeCulture?ddlCulture=bg"><img src="~/Content/Images/bg-flag.png" height="20" width="20" /></a>
+                    </span>
+                </div>
+                <div id="content" class="col-md-8 text-black text-bold ">
+                    @RenderBody()
+
+
+                </div>
+            </div>
+
+            <!-- footer-->
+            <div class="row align-items-end">
+                <div class="col-md-12">
+                    <hr />
+                    <footer class="navbar-fixed-bottom">
+                        <p>&copy; Movie Reviews </p>
+                    </footer>
+                </div>
+            </div>
+            <!-- end footer-->
+
+        </div><!-- end container-fluid-->
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="/Scripts/custom/mainScript.js"></script>
+    </body>
+}
+</html>

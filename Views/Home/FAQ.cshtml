@@ -1,0 +1,150 @@
+﻿@using MovieReviews.Resources
+<div class="container text-black-50">
+    
+    <div class="row mt-3">
+        <div class="col-12 ">
+            <div class="accordion d-none d-md-block" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1.@Resource.WhatIsThisAllAbout
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.WhatIsThisAllAboutA
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2.@Resource.HowCanIRegister
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.HowCanIRegisterA
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3.@Resource.HowToAddAReview
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.HowToAddAReviewA
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4.@Resource.HowToDelete
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.HowToDeleteA
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5. @Resource.HowToAddMovie
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.HowToAddMovieA
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6. @Resource.HowToReport
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @Resource.HowToReportA
+                        </div>
+                    </div>
+                </div>
+
+               <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            7. @Resource.ChangeLang
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                    <div class="card-body">
+                        @Resource.ChangeLangA
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-md-none background-faq">
+                <!-- small displays -->
+                <div id="qust1" class="text-bold">1.@Resource.WhatIsThisAllAbout</div>
+                <div id="answ1"> @Resource.WhatIsThisAllAboutA</div>
+                <div id="qust2" class="text-bold mt-3">2.@Resource.HowCanIRegister</div>
+                <div id="answ2">
+                    @Resource.HowCanIRegisterA
+                </div>
+                <div id="qust3" class="text-bold mt-3">3.@Resource.HowToAddAReview</div>
+                <div id="answ3">
+                    @Resource.HowToAddAReviewA
+                </div>
+                <div id="qust4" class="text-bold mt-3">4. @Resource.HowToDelete</div>
+                <div id="answ4">
+                    @Resource.HowToDeleteA
+                </div>
+                <div id="qust5" class="text-bold mt-3">
+                    5. @Resource.HowToAddMovie
+                </div>
+                <div id="answ5">
+                    @Resource.HowToAddMovieA
+                </div>
+                <div id="qust6" class="text-bold mt-3">
+                    6.@Resource.HowToReport
+                </div>
+                <div id="answ6">
+                    @Resource.HowToReportA
+                </div>
+                <div id="qust7" class="text-bold mt-3">
+                    7.@Resource.ChangeLang
+                </div>
+                <div id="answ7">
+                    @Resource.ChangeLangA
+                </div>
+            </div>
+
+        </div> 
+    </div>
+   
+</div>

@@ -1,0 +1,67 @@
+﻿@model MovieReviews.Identity.ApplicationUser
+@using MovieReviews.Models;
+
+<div class="table-responsive">
+
+    <table class="table">
+        @{
+            <tr>
+
+                <th>ID:</th>
+                <th>Username:</th>
+                <th>Name:</th>
+                <th>Last name:</th>
+                <th>Email:</th>
+
+            </tr>
+            <tr>
+
+                <td>@Model.Id</td>
+                <td>@Model.UserName </td>
+                <td>@Model.FirstName </td>
+                <td>@Model.LastName</td>
+                <td>@Model.Email</td>
+                <td>
+                    @{
+                        using (MovieReviewsDbContext context = new MovieReviewsDbContext())
+                        {
+                            if (Model.Roles != null)
+                            {
+                                foreach (var role in Model.Roles)
+                                {
+                                    var currentRole = context.Roles.Where(i => i.Id == role.RoleId).SingleOrDefault().Name;
+                                    @currentRole
+
+                                }
+                            }
+                        }
+                    }
+
+                </td>
+                <td>
+                    @using (Html.BeginForm("DeleteUser", "Admin", new { Id = @Model.Id }, FormMethod.Post))
+                    {
+                        <button class="btn btn-sm">Delete</button>
+                    }
+                    @{
+                        if (Model.Roles.Count > 0) // then he is either admin or moderator so show remove option
+                        {
+                            using (Html.BeginForm("RemoveAdmin", "Admin", new { Id = @Model.Id }, FormMethod.Post))
+                            {
+                                <button class="btn btn-sm">Remove admin</button>
+                            }<br>
+                        }
+                        else
+                        { // otherwise show 'make' option
+                            using (Html.BeginForm("AddAdmin", "Admin", new { Id = @Model.Id }, FormMethod.Post))
+                            {
+                                <button class="btn btn-sm">Make admin</button>
+                            }<br>
+                        }
+                    }
+                </td>
+
+            </tr>
+        }
+    </table>
+</div>

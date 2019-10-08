@@ -1,0 +1,20 @@
+﻿@model MovieReviews.Models.VM.AddReviewModel
+@using Microsoft.AspNet.Identity;
+@using MovieReviews.Identity;
+@using MovieReviews.Models;
+@{
+    ViewBag.Title = "Add review";
+}
+
+@using (Html.BeginForm("Index", "Add", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.TextBoxFor(o => o.MovieName, new { @Value = ViewBag.MovieName, @readonly = "readonly", @class = "form-control" })
+    <br />
+    <h1 class="dislay-4 text-white">Your opinion:</h1>
+    @Html.TextAreaFor(o => o.Review, 10, 50, new { @class = "form-control" })
+
+    <input type="submit" value="Add" />
+}
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })

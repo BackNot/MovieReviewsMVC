@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MovieReviews.Models.Movie>
+<div class="table-responsive">
+    <table class="table table-borderless text-white">
+        @{
+            <tr>
+                <th>Image:</th>
+                <th>ID:</th>
+                <th>Name:</th>
+                <th>Name:</th>
+                <th>Year:</th>
+                <th>Description:</th>
+                <th>Category</th>
+                <th>Stars:</th>
+                <th>Review:</th>
+            </tr>
+            foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>@item.PathToImage</td>
+                    <td>@item.MovieId </td>
+                    <td>@item.MovieName </td>
+                    <td>@item.MovieYear</td>
+                    <td>@item.Description</td>
+                    <td>@item.Category</td>
+                    <td>@item.Stars</td>
+                    <td>@item.Review</td>
+                    <td>
+                        @using (Html.BeginForm("EditMovies", "Admin", new { Id = @item.MovieId }, FormMethod.Get))
+                        {
+                            <button class="btn btn-sm">Edit</button>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>

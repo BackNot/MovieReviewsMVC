@@ -1,0 +1,62 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <input class="form-control mt-5 ajaxMovieSearchString" type="search" placeholder="Ajax: Enter movie id..." aria-label="Search">
+        </div>
+       
+
+    </div>
+    <div class="row">
+        <!-- movie-->
+        <div class="col-md-4 text-right">
+            <button class="btn btn-info btn-sm mt-1 ajaxMovie" type="submit" data-url="@Url.Content("~/Admin/AjaxMovies")">Search</button>
+        </div>
+    </div>
+    <div class="row ">
+        <!-- movie-->
+        <div class="col-md-4">
+            @using (Html.BeginForm("ShowMovies", "Admin", FormMethod.Get))
+            {
+
+                <button class="nav-link btn btn-sm btn-block btn-dark ">Show all movies</button>
+
+            }
+            </div>
+            <div class="col-md-4 ml-2">
+                @using (Html.BeginForm("AddMovie", "Admin", FormMethod.Get))
+            {
+
+                    <button class="nav-link btn btn-sm btn-block btn-dark ">Add movie</button>
+
+            }
+        </div>
+       
+       
+    </div> <!-- end row-->
+
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <input class="form-control mt-5 ajaxUserSearchString " type="search" placeholder="Ajax: Enter username..." aria-label="Search">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right">
+            <button class="btn btn-info btn-sm mt-1 ajaxUser" type="submit" data-url="@Url.Content("~/Admin/AjaxUsers")">Search</button>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-md-4">
+            @using (Html.BeginForm("ShowUsers", "Admin", FormMethod.Get))
+            {
+
+                <button class="nav-link btn btn-sm btn-block btn-dark">Show all users</button>
+
+            }
+        </div>
+    </div>
+</div> <!-- end container-->
+
+<div id="ajax-render-zone"> <!-- render here result from ajax request-->
+
+</div>
